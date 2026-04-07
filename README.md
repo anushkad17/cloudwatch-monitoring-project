@@ -10,7 +10,16 @@ This project demonstrates monitoring of an EC2 instance using CloudWatch Agent.
 - SNS notifications
 
 ## Architecture
-EC2 → CloudWatch Agent → CloudWatch
+
+EC2 Instance
+     ↓
+CloudWatch Agent
+     ↓
+CloudWatch (Metrics + Logs)
+     ↓
+CloudWatch Alarm
+     ↓
+SNS Notification (Email)
 
 ## Setup Steps
 1. Created EC2 instance with IAM role
