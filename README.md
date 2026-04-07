@@ -1,20 +1,20 @@
-\# AWS CloudWatch Monitoring Project
+# AWS CloudWatch Monitoring Project
 
-
-
-\## Overview
-
+## Overview
 This project demonstrates monitoring of an EC2 instance using CloudWatch Agent.
 
+## Features
+- Memory monitoring (mem_used_percent)
+- Log collection (/var/log/messages)
+- CloudWatch alarms
+- SNS notifications
 
+## Architecture
+EC2 → CloudWatch Agent → CloudWatch
 
-\## Features
-
-\- Memory monitoring (mem\_used\_percent)
-
-\- Log collection (/var/log/messages)
-
-\- CloudWatch alarms
-
-\- SNS notifications
-
+## Setup Steps
+1. Created EC2 instance with IAM role
+2. Installed CloudWatch Agent using User Data
+3. Configured metrics and logs
+4. Verified metrics in CloudWatch
+5. Created alarm and notifications
