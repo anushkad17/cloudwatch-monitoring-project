@@ -21,6 +21,10 @@ CloudWatch Alarm
      ↓
 SNS Notification (Email)
 
+![Architecture](screenshots/architecture.png)
+
+
+
 ## Setup Steps
 1. Created EC2 instance with IAM role
 2. Installed CloudWatch Agent using User Data
